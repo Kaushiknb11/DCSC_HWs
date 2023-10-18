@@ -1,14 +1,9 @@
 FROM python:3.9.1
 
-
 WORKDIR /app
-COPY pipeline.py pipeline_copy.py
-#COPY laptopData.csv source.csv
 
+COPY pipeline.py pipeline.py
 
-RUN pip install pandas
-RUN pip install numpy
+RUN pip install pandas sqlalchemy psycopg2
 
-
-ENTRYPOINT [ "python", "pipeline_copy.py" ]
-
+ENTRYPOINT [ "python", "pipeline.py" ]
