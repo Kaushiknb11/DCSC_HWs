@@ -1,0 +1,34 @@
+[2023-11-21T00:36:47.453+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shelter_data_dag.retrieve_data scheduled__2023-11-06T00:00:00+00:00 [queued]>
+[2023-11-21T00:36:50.573+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shelter_data_dag.retrieve_data scheduled__2023-11-06T00:00:00+00:00 [queued]>
+[2023-11-21T00:36:50.703+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-21T00:36:51.376+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): retrieve_data> on 2023-11-06 00:00:00+00:00
+[2023-11-21T00:36:51.420+0000] {standard_task_runner.py:57} INFO - Started process 96 to run task
+[2023-11-21T00:36:51.533+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'shelter_data_dag', 'retrieve_data', 'scheduled__2023-11-06T00:00:00+00:00', '--job-id', '93', '--raw', '--subdir', 'DAGS_FOLDER/DAG.py', '--cfg-path', '/tmp/tmpk7bc7508']
+[2023-11-21T00:36:51.706+0000] {standard_task_runner.py:85} INFO - Job 93: Subtask retrieve_data
+[2023-11-21T00:36:53.023+0000] {task_command.py:416} INFO - Running <TaskInstance: shelter_data_dag.retrieve_data scheduled__2023-11-06T00:00:00+00:00 [running]> on host 610e9614f2ef
+[2023-11-21T00:36:54.603+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shelter_data_dag' AIRFLOW_CTX_TASK_ID='retrieve_data' AIRFLOW_CTX_EXECUTION_DATE='2023-11-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-06T00:00:00+00:00'
+[2023-11-21T00:36:59.012+0000] {local_task_job_runner.py:228} INFO - Task exited with return code -9
+[2023-11-21T00:37:00.039+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-21T00:43:32.470+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shelter_data_dag.retrieve_data scheduled__2023-11-06T00:00:00+00:00 [queued]>
+[2023-11-21T00:43:32.621+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shelter_data_dag.retrieve_data scheduled__2023-11-06T00:00:00+00:00 [queued]>
+[2023-11-21T00:43:32.656+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-21T00:43:34.316+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): retrieve_data> on 2023-11-06 00:00:00+00:00
+[2023-11-21T00:43:35.612+0000] {standard_task_runner.py:57} INFO - Started process 96 to run task
+[2023-11-21T00:43:35.723+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'shelter_data_dag', 'retrieve_data', 'scheduled__2023-11-06T00:00:00+00:00', '--job-id', '136', '--raw', '--subdir', 'DAGS_FOLDER/DAG.py', '--cfg-path', '/tmp/tmpus6oqmt_']
+[2023-11-21T00:43:35.844+0000] {standard_task_runner.py:85} INFO - Job 136: Subtask retrieve_data
+[2023-11-21T00:43:36.977+0000] {local_task_job_runner.py:228} INFO - Task exited with return code -9
+[2023-11-21T00:59:18.966+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shelter_data_dag.retrieve_data scheduled__2023-11-06T00:00:00+00:00 [queued]>
+[2023-11-21T00:59:19.037+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shelter_data_dag.retrieve_data scheduled__2023-11-06T00:00:00+00:00 [queued]>
+[2023-11-21T00:59:19.038+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-21T00:59:19.179+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): retrieve_data> on 2023-11-06 00:00:00+00:00
+[2023-11-21T00:59:19.259+0000] {standard_task_runner.py:57} INFO - Started process 108 to run task
+[2023-11-21T00:59:19.317+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'shelter_data_dag', 'retrieve_data', 'scheduled__2023-11-06T00:00:00+00:00', '--job-id', '199', '--raw', '--subdir', 'DAGS_FOLDER/DAG.py', '--cfg-path', '/tmp/tmpkkldqjsb']
+[2023-11-21T00:59:19.376+0000] {standard_task_runner.py:85} INFO - Job 199: Subtask retrieve_data
+[2023-11-21T00:59:25.894+0000] {task_command.py:416} INFO - Running <TaskInstance: shelter_data_dag.retrieve_data scheduled__2023-11-06T00:00:00+00:00 [running]> on host e39dda9a9deb
+[2023-11-21T00:59:26.383+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shelter_data_dag' AIRFLOW_CTX_TASK_ID='retrieve_data' AIRFLOW_CTX_EXECUTION_DATE='2023-11-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-06T00:00:00+00:00'
+[2023-11-21T00:59:39.720+0000] {etl.py:91} INFO - Uploading data to 'raw_data'...
+[2023-11-21T00:59:40.858+0000] {etl.py:98} INFO - Updating 'Old_Data' with current data...
+[2023-11-21T00:59:41.555+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-21T00:59:41.616+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=shelter_data_dag, task_id=retrieve_data, execution_date=20231106T000000, start_date=20231121T005918, end_date=20231121T005941
+[2023-11-21T00:59:41.695+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-21T00:59:41.772+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,39 @@
+[2023-11-21T00:38:39.930+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shelter_data_dag.transform_data scheduled__2023-11-10T00:00:00+00:00 [queued]>
+[2023-11-21T00:38:39.939+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shelter_data_dag.transform_data scheduled__2023-11-10T00:00:00+00:00 [queued]>
+[2023-11-21T00:38:39.940+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-21T00:38:39.973+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): transform_data> on 2023-11-10 00:00:00+00:00
+[2023-11-21T00:38:39.984+0000] {standard_task_runner.py:57} INFO - Started process 65 to run task
+[2023-11-21T00:38:40.008+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'shelter_data_dag', 'transform_data', 'scheduled__2023-11-10T00:00:00+00:00', '--job-id', '111', '--raw', '--subdir', 'DAGS_FOLDER/DAG.py', '--cfg-path', '/tmp/tmpqxwef6ak']
+[2023-11-21T00:38:40.019+0000] {standard_task_runner.py:85} INFO - Job 111: Subtask transform_data
+[2023-11-21T00:38:40.132+0000] {task_command.py:416} INFO - Running <TaskInstance: shelter_data_dag.transform_data scheduled__2023-11-10T00:00:00+00:00 [running]> on host c6d84631e1b9
+[2023-11-21T00:38:40.347+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shelter_data_dag' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2023-11-10T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-10T00:00:00+00:00'
+[2023-11-21T00:38:41.501+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/Scripts/etl.py", line 118, in transform_data
+    obj = s3.get_object(Bucket=bucket_name, Key=s3_object_name)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/client.py", line 535, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/botocore/client.py", line 980, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.NoSuchKey: An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.
+[2023-11-21T00:38:41.568+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=shelter_data_dag, task_id=transform_data, execution_date=20231110T000000, start_date=20231121T003839, end_date=20231121T003841
+[2023-11-21T00:38:41.597+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 111 for task transform_data (An error occurred (NoSuchKey) when calling the GetObject operation: The specified key does not exist.; 65)
+[2023-11-21T00:38:41.690+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-11-21T00:38:41.807+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-11-21T01:04:17.245+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shelter_data_dag.transform_data scheduled__2023-11-10T00:00:00+00:00 [queued]>
+[2023-11-21T01:04:17.280+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shelter_data_dag.transform_data scheduled__2023-11-10T00:00:00+00:00 [queued]>
+[2023-11-21T01:04:17.281+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-21T01:04:17.307+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): transform_data> on 2023-11-10 00:00:00+00:00
+[2023-11-21T01:04:17.341+0000] {standard_task_runner.py:57} INFO - Started process 292 to run task
+[2023-11-21T01:04:17.354+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'shelter_data_dag', 'transform_data', 'scheduled__2023-11-10T00:00:00+00:00', '--job-id', '243', '--raw', '--subdir', 'DAGS_FOLDER/DAG.py', '--cfg-path', '/tmp/tmpqza4y61b']
+[2023-11-21T01:04:17.360+0000] {standard_task_runner.py:85} INFO - Job 243: Subtask transform_data
+[2023-11-21T01:04:17.566+0000] {task_command.py:416} INFO - Running <TaskInstance: shelter_data_dag.transform_data scheduled__2023-11-10T00:00:00+00:00 [running]> on host e39dda9a9deb
+[2023-11-21T01:04:17.721+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shelter_data_dag' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2023-11-10T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-10T00:00:00+00:00'
+[2023-11-21T01:04:21.549+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-21T01:04:21.648+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=shelter_data_dag, task_id=transform_data, execution_date=20231110T000000, start_date=20231121T010417, end_date=20231121T010421
+[2023-11-21T01:04:21.754+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-21T01:04:21.844+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
