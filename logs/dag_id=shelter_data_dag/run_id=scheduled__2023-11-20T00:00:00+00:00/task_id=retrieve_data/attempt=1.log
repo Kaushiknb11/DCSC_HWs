@@ -1,0 +1,48 @@
+[2023-11-21T00:38:59.942+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shelter_data_dag.retrieve_data scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-21T00:38:59.946+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shelter_data_dag.retrieve_data scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-21T00:38:59.946+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-21T00:38:59.954+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): retrieve_data> on 2023-11-20 00:00:00+00:00
+[2023-11-21T00:38:59.962+0000] {standard_task_runner.py:57} INFO - Started process 102 to run task
+[2023-11-21T00:38:59.977+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'shelter_data_dag', 'retrieve_data', 'scheduled__2023-11-20T00:00:00+00:00', '--job-id', '121', '--raw', '--subdir', 'DAGS_FOLDER/DAG.py', '--cfg-path', '/tmp/tmpvfovzbzn']
+[2023-11-21T00:38:59.985+0000] {standard_task_runner.py:85} INFO - Job 121: Subtask retrieve_data
+[2023-11-21T00:39:00.210+0000] {task_command.py:416} INFO - Running <TaskInstance: shelter_data_dag.retrieve_data scheduled__2023-11-20T00:00:00+00:00 [running]> on host c6d84631e1b9
+[2023-11-21T00:39:00.364+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shelter_data_dag' AIRFLOW_CTX_TASK_ID='retrieve_data' AIRFLOW_CTX_EXECUTION_DATE='2023-11-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-20T00:00:00+00:00'
+[2023-11-21T00:39:02.259+0000] {etl.py:87} INFO - No new or updated data to upload. Creating an empty CSV with headers.
+[2023-11-21T00:39:02.261+0000] {etl.py:91} INFO - Uploading data to 'raw_data'...
+[2023-11-21T00:39:02.428+0000] {etl.py:98} INFO - Updating 'Old_Data' with current data...
+[2023-11-21T00:39:02.910+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-21T00:39:02.929+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=shelter_data_dag, task_id=retrieve_data, execution_date=20231120T000000, start_date=20231121T003859, end_date=20231121T003902
+[2023-11-21T00:39:02.993+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-21T00:39:03.040+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-11-21T00:44:15.813+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shelter_data_dag.retrieve_data scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-21T00:44:15.818+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shelter_data_dag.retrieve_data scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-21T00:44:15.819+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-21T00:44:15.850+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): retrieve_data> on 2023-11-20 00:00:00+00:00
+[2023-11-21T00:44:15.866+0000] {standard_task_runner.py:57} INFO - Started process 157 to run task
+[2023-11-21T00:44:15.888+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'shelter_data_dag', 'retrieve_data', 'scheduled__2023-11-20T00:00:00+00:00', '--job-id', '163', '--raw', '--subdir', 'DAGS_FOLDER/DAG.py', '--cfg-path', '/tmp/tmptl6y5lub']
+[2023-11-21T00:44:15.895+0000] {standard_task_runner.py:85} INFO - Job 163: Subtask retrieve_data
+[2023-11-21T00:44:15.987+0000] {task_command.py:416} INFO - Running <TaskInstance: shelter_data_dag.retrieve_data scheduled__2023-11-20T00:00:00+00:00 [running]> on host 51d09cf321f5
+[2023-11-21T00:44:16.169+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shelter_data_dag' AIRFLOW_CTX_TASK_ID='retrieve_data' AIRFLOW_CTX_EXECUTION_DATE='2023-11-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-20T00:00:00+00:00'
+[2023-11-21T00:44:18.001+0000] {etl.py:87} INFO - No new or updated data to upload. Creating an empty CSV with headers.
+[2023-11-21T00:44:18.011+0000] {etl.py:91} INFO - Uploading data to 'raw_data'...
+[2023-11-21T00:44:18.197+0000] {etl.py:98} INFO - Updating 'Old_Data' with current data...
+[2023-11-21T00:44:19.848+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-21T00:44:19.929+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=shelter_data_dag, task_id=retrieve_data, execution_date=20231120T000000, start_date=20231121T004415, end_date=20231121T004419
+[2023-11-21T00:44:20.094+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-21T00:44:20.209+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-11-21T01:00:14.187+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: shelter_data_dag.retrieve_data scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-21T01:00:14.237+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: shelter_data_dag.retrieve_data scheduled__2023-11-20T00:00:00+00:00 [queued]>
+[2023-11-21T01:00:14.238+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-21T01:00:14.259+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): retrieve_data> on 2023-11-20 00:00:00+00:00
+[2023-11-21T01:00:14.304+0000] {standard_task_runner.py:57} INFO - Started process 164 to run task
+[2023-11-21T01:00:14.364+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'shelter_data_dag', 'retrieve_data', 'scheduled__2023-11-20T00:00:00+00:00', '--job-id', '218', '--raw', '--subdir', 'DAGS_FOLDER/DAG.py', '--cfg-path', '/tmp/tmpf7_pk5q5']
+[2023-11-21T01:00:14.458+0000] {standard_task_runner.py:85} INFO - Job 218: Subtask retrieve_data
+[2023-11-21T01:00:14.780+0000] {task_command.py:416} INFO - Running <TaskInstance: shelter_data_dag.retrieve_data scheduled__2023-11-20T00:00:00+00:00 [running]> on host e39dda9a9deb
+[2023-11-21T01:00:14.934+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='shelter_data_dag' AIRFLOW_CTX_TASK_ID='retrieve_data' AIRFLOW_CTX_EXECUTION_DATE='2023-11-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-20T00:00:00+00:00'
+[2023-11-21T01:00:16.938+0000] {etl.py:87} INFO - No new or updated data to upload. Creating an empty CSV with headers.
+[2023-11-21T01:00:16.942+0000] {etl.py:91} INFO - Uploading data to 'raw_data'...
+[2023-11-21T01:00:17.109+0000] {etl.py:98} INFO - Updating 'Old_Data' with current data...
+[2023-11-21T01:00:18.205+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-21T01:00:18.334+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=shelter_data_dag, task_id=retrieve_data, execution_date=20231120T000000, start_date=20231121T010014, end_date=20231121T010018
+[2023-11-21T01:00:18.404+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-21T01:00:18.450+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
