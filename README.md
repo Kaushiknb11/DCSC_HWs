@@ -24,7 +24,7 @@ docker compose up
 
 ---
 
-#### Snippets from the actual run
+## Snippets from the actual run
 
 ### Visualization of Airflow DAG
 ![Image 11-20-23 at 7 36 PM](https://github.com/Kaushiknb11/DCSC_HWs/assets/107951993/7940d957-7efc-415f-9234-7268b03bc750)
