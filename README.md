@@ -14,7 +14,7 @@ This is a repo containing all the homework assignments for the Datacenter Scale 
 
 * Instantiate Docker
   
-*  Ensure that the 'docker-compose.yml' file is present in the directory by checking with the 'ls' command.
+*  Ensure that the 'docker-compose.yaml' file is present in the directory by checking with the 'ls' command.
 
 * In the terminal or WSL, execute the following commands:
 
