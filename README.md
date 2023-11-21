@@ -1,16 +1,22 @@
-# DCSC_HWs
-This is a repo containing homework's for the Datacenter Scale Computing course
+# Data Center Scale Computing
+
+### CSCI-5253 - Fall 2023 - Dr. Alex Yarosh
+---
+
+### About the Repository
+This is a repo containing all the homework assignments for the Datacenter Scale Computing course
 
 ---
 
 ### HW3 Airflow -- Instructions to Run
 
-##### Docker Compose Instantiation
+##### Executing Docker Compose
 
 * Instantiate Docker
- Go into the directory (Ensure that the docker-compose.yml file is present by checking with the 'ls' command).
+  
+*  Ensure that the 'docker-compose.yml' file is present in the directory by checking with the 'ls' command.
 
-In the terminal or WSL, execute the following commands:
+* In the terminal or WSL, execute the following commands:
 
 ```bash
 docker compose up
